@@ -1,12 +1,12 @@
 // Step 1: Set up our chart
 // ===========================
-var svgWidth = 800;
-var svgHeight = 800;
+var svgWidth = 700;
+var svgHeight = 550;
 
 //set the margins
 var margin = {
-  top: 20,
-  right: 40,
+  top: 40,
+  right: 30,
   bottom: 60,
   left: 100
 };
@@ -78,7 +78,7 @@ d3.csv("assets/data/data.csv").then(function(datacsv) {
     circlesGroup.append("p")
                 .text(d => d.abbr)
                 .classed("stateText", true)
-                .style("fill", "skyblue")
+                .style("fill", "blue")
 
     var stateText = chartGroup.selectAll(".text")
                               .data(datacsv)
